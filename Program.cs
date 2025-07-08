@@ -11,9 +11,10 @@
             Console.WriteLine($"{a} and {b} {(a == b ? "are" : "are not")} equal");
 
             // 1.2.2
-            int sum = 0, num = 10;
-            Console.WriteLine($"The first {num} natural number is : ");
-            for (int i = 1; i <= num; i++)
+            Console.WriteLine("Enter a natural number: ");
+            int sum = 0, nNatNum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"The first {nNatNum} natural number is : ");
+            for (int i = 1; i <= nNatNum; i++)
             {
                 Console.Write(i + " ");
                 sum = sum + i;
