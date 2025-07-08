@@ -43,7 +43,14 @@
                         Console.WriteLine($"Multiplication of {a} and {b}: {a * b}");
                         break;
                     case "d":
-                        Console.WriteLine($"Division of {a} and {b}: {a / b}");
+                        if(b == 0)
+                        {
+                            Console.WriteLine("Error: divide by zero!");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Division of {a} and {b}: {a / b}");
+                        }
                         break;
                     default:
                         Console.WriteLine("Not a valid option!");
